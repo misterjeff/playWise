@@ -4,13 +4,13 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.misterjeffbrown.playwise.DiceActivity"
+    tools:context="com.misterjeffbrown.playwise.RangeActivity"
     android:background="@color/dice_bg">
 
     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:id="@+id/dice_title"
+        android:id="@+id/range_title"
         android:layout_centerHorizontal="true"
-        android:text="@string/dice_title"
+        android:text="@string/range_title"
         android:textSize="18pt"
         android:textStyle="bold"
         android:textColor="@color/bone"
@@ -18,8 +18,8 @@
 
 
     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:id="@+id/dice_d"
-        android:layout_below="@+id/dice_title"
+        android:id="@+id/range_d"
+        android:layout_below="@+id/range_title"
         android:layout_marginTop="40dp"
         android:layout_centerHorizontal="true"
         android:text="@string/dice_d"
@@ -27,19 +27,19 @@
         android:textColor="@color/bone"/>
 
     <EditText android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:id="@+id/dice_numDice"
-        android:layout_below="@id/dice_title"
-        android:layout_toLeftOf="@id/dice_d"
-        android:layout_alignBaseline="@id/dice_d"
-        android:text="1"
+        android:id="@+id/range_numDice"
+        android:layout_below="@id/range_title"
+        android:layout_toLeftOf="@id/range_d"
+        android:layout_alignBaseline="@id/range_d"
+        android:text="2"
         android:textColor="@color/bone"
         android:textSize="14pt"/>
 
     <EditText android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:id="@+id/dice_numFaces"
+        android:id="@+id/range_numFaces"
         android:layout_below="@id/dice_title"
-        android:layout_toRightOf="@id/dice_d"
-        android:layout_alignBaseline="@id/dice_d"
+        android:layout_toRightOf="@id/range_d"
+        android:layout_alignBaseline="@id/range_d"
         android:layout_marginTop="24dp"
         android:text="6"
         android:textColor="@color/bone"
@@ -47,38 +47,67 @@
 
 
     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:id="@+id/dice_probabilityOf1"
-        android:layout_below="@id/dice_d"
+        android:id="@+id/range_probabilityOf1"
+        android:layout_below="@id/range_d"
         android:layout_marginTop="34dp"
         android:layout_centerHorizontal="true"
-        android:text="@string/dice_probabilityOf1"
+        android:text="@string/range_probabilityOf1"
         android:textSize="14pt"
         android:textColor="@color/bone"
         android:gravity="center_horizontal"/>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/range_rangeLayout"
+        android:layout_below="@id/range_probabilityOf1"
+        android:gravity="center_horizontal">
     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:id="@+id/dice_probabilityOf2"
-        android:layout_below="@id/dice_probabilityOf1"
-        android:layout_centerHorizontal="true"
-        android:text="@string/dice_probabilityOf2"
+        android:id="@+id/range_probabilityOf2"
+
+
+        android:text="@string/range_probabilityOf2"
         android:textSize="14pt"
         android:textColor="@color/bone"
         android:gravity="center_horizontal"/>
 
     <EditText android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:id="@+id/dice_desiredOutcome"
-        android:layout_below="@id/dice_probabilityOf1"
-        android:layout_toRightOf="@id/dice_probabilityOf2"
+        android:id="@+id/range_desiredStart"
+
+        android:layout_toRightOf="@id/range_probabilityOf2"
         android:layout_marginLeft="8dp"
-        android:layout_alignBaseline="@id/dice_probabilityOf2"
-        android:text="4"
+        android:layout_alignBaseline="@id/range_probabilityOf2"
+        android:text="3"
         android:textColor="@color/bone"
         android:textSize="14pt"/>
 
 
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:id="@+id/range_probabilityOf3"
+
+        android:layout_toRightOf="@id/range_desiredStart"
+        android:layout_centerHorizontal="true"
+        android:text="@string/range_probabilityOf3"
+        android:textSize="14pt"
+        android:textColor="@color/bone"
+        android:gravity="center_horizontal"/>
+
+
+    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:id="@+id/range_desiredEnd"
+
+        android:layout_toRightOf="@id/range_probabilityOf3"
+        android:layout_marginLeft="8dp"
+        android:layout_alignBaseline="@id/range_probabilityOf3"
+        android:text="6"
+        android:textColor="@color/bone"
+        android:textSize="14pt"/>
+    </RelativeLayout>
+
+
     <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:id="@+id/dice_calculate"
-        android:layout_below="@id/dice_desiredOutcome"
+        android:id="@+id/range_calculate"
+        android:layout_below="@id/range_rangeLayout"
         android:layout_marginTop="24dp"
         android:layout_centerHorizontal="true"
         android:text="@string/dice_calculate"
@@ -89,8 +118,8 @@
 
 
     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:id="@+id/dice_results"
-        android:layout_below="@id/dice_calculate"
+        android:id="@+id/range_results"
+        android:layout_below="@id/range_calculate"
         android:layout_marginTop="28dp"
         android:layout_centerHorizontal="true"
         android:text=""

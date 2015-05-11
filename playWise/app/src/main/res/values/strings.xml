@@ -3,25 +3,37 @@
 
     <string name="app_name">playWise</string>
     <string name="action_settings">Settings</string>
-    <string name="main_title">playWise\nProbability Calculator</string>
+    <string name="main_title">playWise</string>
+    <string name="main_title2">Probability Calculator</string>
     <string name="main_choose">Pick Your Poison:</string>
-    <string name="main_choice1">Dice</string>
+    <string name="main_diceBtn1">Single</string>
+    <string name="main_diceBtn2">Range</string>
+    <string name="main_askBtn">Ask</string>
+    <string name="main_exitBtn">Exit</string>
     <string name="main_choice2">Cards</string>
-    <string name="dice_title">Dice</string>
+    <string name="dice_title">Single Result\nProbability</string>
     <string name="dice_d">d</string>
     <string name="dice_probabilityOf1">Probability of</string>
     <string name="dice_probabilityOf2">rolling a </string>
-    <string name="dice_calculate">Go</string>
+    <string name="dice_calculate">Run</string>
+    <string name="range_title">Ranged Result\nProbability</string>
+    <string name="range_probabilityOf1">Probability of rolling</string>
+    <string name="range_probabilityOf2"># between </string>
+    <string name="range_probabilityOf3"> and </string>
+    <string name="ask_title">Anything\nProbability</string>
+    <string name="ask_whatIs">What is the probability that</string>
+    <string name="ask_questionHint">...my kids will hate me</string>
     <string name="cards_title">Cards</string>
 
     <color name="main_bg">#3B444B</color>
     <color name="dice_bg">#3B444B</color>
     <color name="cards_bg">#3B444B</color>
-
     <color name="bone">#E3DAC9</color>
 
     <string name="title_activity_dice">DiceActivity</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_cards">CardsActivity</string>
+    <string name="title_activity_range">Range</string>
+    <string name="title_activity_ask">Ask</string>
 
 </resources>

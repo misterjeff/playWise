@@ -1,9 +1,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.misterjeffbrown.playwise.DiceActivity">
+    tools:context="com.misterjeffbrown.playwise.RangeActivity">
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
-    <item android:id="@+id/multiple" android:title="Ranged Result"
+    <item android:id="@+id/single" android:title="Single Result"
         app:showAsAction="ifRoom" />
+    <item android:id="@id/multiple" android:title="Ranged Result"
+        app:showAsAction="never" />
 </menu>

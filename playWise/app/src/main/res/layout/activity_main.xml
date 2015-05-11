@@ -8,32 +8,76 @@
 
     <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
         android:id="@+id/main_title"
+        android:layout_marginTop="8dp"
         android:text="@string/main_title"
-        android:textSize="16pt"
+        android:textSize="24pt"
         android:textColor="@color/bone"
         android:gravity="center"/>
 
 
     <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:id="@+id/main_title2"
+        android:layout_below="@id/main_title"
+        android:layout_marginTop="16dp"
+        android:text="@string/main_title2"
+        android:textSize="16pt"
+        android:textColor="@color/bone"
+        android:gravity="center"/>
+
+
+    <!-- <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
         android:id="@+id/main_choose"
         android:layout_below="@id/main_title"
         android:layout_marginTop="32dp"
         android:text="@string/main_choose"
         android:textSize="12pt"
         android:textColor="@color/bone"
-        android:gravity="center"/>
+        android:gravity="center"/> -->
 
-    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:id="@+id/main_choice1"
-        android:layout_below="@id/main_choose"
-        android:layout_marginTop="20dp"
+    <Button android:layout_width="@dimen/main_btnWidth" android:layout_height="wrap_content"
+        android:id="@+id/main_diceBtn1"
+        android:layout_below="@id/main_title2"
+        android:layout_marginTop="42dp"
         android:layout_centerHorizontal="true"
-        android:text="@string/main_choice1"
-        android:textColor="@color/main_bg"
+        android:text="@string/main_diceBtn1"
+        android:textColor="@color/bone"
         android:textSize="10pt"
-        android:onClick="main_choice1"/>
+        android:onClick="single"/>
 
-    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+    <Button android:layout_width="@dimen/main_btnWidth" android:layout_height="wrap_content"
+        android:id="@+id/main_diceBtn2"
+        android:layout_below="@id/main_diceBtn1"
+        android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/main_diceBtn2"
+        android:textColor="@color/bone"
+        android:textSize="10pt"
+        android:onClick="range"/>
+
+
+    <Button android:layout_width="@dimen/main_btnWidth" android:layout_height="wrap_content"
+        android:id="@+id/main_askBtn"
+        android:layout_below="@id/main_diceBtn2"
+        android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/main_askBtn"
+        android:textColor="@color/bone"
+        android:textSize="10pt"
+        android:onClick="ask"/>
+
+
+    <Button android:layout_width="@dimen/main_btnWidth" android:layout_height="wrap_content"
+        android:id="@+id/main_exitBtn"
+        android:layout_below="@id/main_askBtn"
+        android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/main_exitBtn"
+        android:textColor="@color/bone"
+        android:textSize="10pt"
+        android:onClick="main_exit"/>
+
+    <!-- <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
         android:id="@+id/main_choice2"
         android:layout_below="@id/main_choice1"
         android:layout_marginTop="10dp"
@@ -41,7 +85,7 @@
         android:text="@string/main_choice2"
         android:textColor="@color/main_bg"
         android:textSize="10pt"
-        android:onClick="main_choice2"/>
+        android:onClick="main_choice2"/> -->
 
 
 </RelativeLayout>

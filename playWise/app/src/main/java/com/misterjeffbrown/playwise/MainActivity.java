@@ -15,6 +15,8 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        setTitle("playWise");
     }
 
 
@@ -42,13 +44,23 @@ public class MainActivity extends ActionBarActivity {
 
 
 
-    public void main_choice1(View view) {
+    public void single(View view) {
         Intent intent_dice = new Intent(this, DiceActivity.class);
         startActivity(intent_dice);
     }
 
-    public void main_choice2(View view) {
-        Intent intent_cards = new Intent(this, CardsActivity.class);
-        startActivity(intent_cards);
+    public void range(View view) {
+        Intent intent_range = new Intent(this, RangeActivity.class);
+        startActivity(intent_range);
+    }
+
+    public void ask(View view) {
+        Intent intent_ask = new Intent(this, AskActivity.class);
+        startActivity(intent_ask);
+    }
+
+    public void main_exit(View view) {
+        finish();
+        System.exit(0);
     }
 }
